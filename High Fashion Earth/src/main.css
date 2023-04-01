@@ -1,0 +1,12 @@
+.page-container{
+    background-color: rgba(255, 244, 241, 1);
+    border:solid 2px red;
+    min-height: 100vh;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 182px;
+    text-transform: uppercase;
+}

@@ -16,7 +16,7 @@
     /* border:solid 2px yellow; */
     font-family: 'Gowun Batang';
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 68px;
     
 }
@@ -24,23 +24,21 @@
 #hero_line-one,
 #hero_line-four{
     margin:0;
+    
+
 }
 
 #hero_line-one{
     margin-left: 0vw;
 }
 #hero_line-two{
-
     margin-left: 25%;
 }
 #hero_line-three{
-    
     margin-left: 55%;
-
 }
 #hero_line-four{
-    
-    margin-left: 70%;
+    margin-left: 75%;
     text-align: left;
 }
 
@@ -59,7 +57,7 @@
     position: absolute;
     bottom: 2vh;
 
-    margin-left: 5vw;
+    margin-left: 10%;
 }
 .brand-name{
     font-family: inter;
@@ -71,15 +69,17 @@
 }
 
 
-/* navbar */
-.navbar{
+/* Heder Title */
+.header-title_container{
+    /* border: solid 2px yellow; */
+    margin:0 .5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1em;
 
 }
-.nav-title{
+.header-title_title{
     font-family: inter;
     font-weight:500;
 }
@@ -112,11 +112,140 @@
 
 .section-theme{
     border:solid 5px royalblue;
-    color:white;
+    
     width: 100%;
     min-height: 100vh;
 }
 
+
+/* Hero text & boxresizing */
+@media screen and (min-width:330px){
+    .hero-text{
+        font-size:1.25rem;
+    }
+}
+@media screen and (min-width:430px){
+    .hero-text{
+        font-size:1.4rem;
+    }
+}
+@media screen and (min-width:530px){
+    .hero-text{
+        font-size:1.75rem;
+    }
+}
+@media screen and (min-width:730px){
+    #hero_line-one{
+        
+    }
+    .hero-text{
+        font-size:2rem;
+    }
+}
+@media screen and (min-width:900px){
+    .hero-text{
+        font-size:2.5rem;
+    }
+}
+/* Full Screen size */
+@media screen and (min-width:1100px){
+    .header-title_container{
+        margin:0 11em;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 5em 0 0;
+    
+    }
+    .header-title_title{
+        font-family: inter;
+        font-size: 2.25rem;
+        font-weight:400;
+        margin: 0;
+    }
+    
+    .hamburger-menu{
+        display: none;
+    }
+    .hero-text{
+        /* border:solid 2px red; */
+        font-size:4.5rem;
+        margin: 0 1em 0 2em;
+        line-height: 1em;
+    }
+    /* Hero Text  */
+    #hero_line-one{
+        margin-left: 2%;
+    }
+    #hero_line-two{
+        margin-left: 25%;
+    }
+    #hero_line-three{
+        margin-left: 50%;
+    }
+    #hero_line-four{
+        margin-left: 65%;
+        text-align: left;
+    }
+    /* Email Container */
+    .email-list-container{
+        margin: 6em 0;
+        width:27vw;
+        position: relative;
+        left: 58vw;
+
+        
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .email-list-text{
+        font-size: 1.75rem;
+        font-weight: 400;
+    }
+    .email-list-container input{
+        width: 28vw;
+        border: solid 1px black;
+        border-radius: 45px;
+        background-color:rgba(255, 244, 241, 1);
+        padding: 2rem 2rem;
+        font-size: 3rem;
+    }
+    .email-list-container input::placeholder{
+        font-size: 2rem;
+        color: rgb(169, 171, 172);
+        padding-left: 1em;
+    }
+    /* Header Box */
+    .brand-box{
+        position: absolute;
+        bottom: -25vh;
+        margin-left: 2vw;
+
+        min-height: 50vh;
+        width:30vw;
+        background-color: #F7EFED;
+        
+        box-shadow: 25px 24px 18px rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+    }
+    .brand-name{
+        font-family: inter;
+        filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+        color: rgba(255, 244, 241, 1);
+        font-size: 3.25rem;
+        margin: 0 auto
+    }
+
+    .paper-plane{
+        position: absolute;
+        top:0;
+        left: 26vw;
+    }
+}
+
+
+/* Who Is Section  */
 .who-is-container{
     border: solid 1px red;
 }

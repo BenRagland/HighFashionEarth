@@ -1,12 +1,122 @@
 .page-container{
     background-color: rgba(255, 244, 241, 1);
-    border:solid 2px red;
-    min-height: 100vh;
+    /* border:solid 4px red; */
+    min-height: 100vh;  
+    width:100%;
 
-    font-family: 'Inter';
-    font-style: normal;
+    
+}
+.header-container{
+    min-height: 100vh;
+}
+/* -------Hero Text------- */
+.hero-text{
+    position: relative;
+    margin: .75em;
+    /* border:solid 2px yellow; */
+    font-family: 'Gowun Batang';
     font-weight: 400;
-    font-size: 150px;
-    line-height: 182px;
-    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 68px;
+    
+}
+
+#hero_line-one,
+#hero_line-four{
+    margin:0;
+}
+
+#hero_line-one{
+    margin-left: 0vw;
+}
+#hero_line-two{
+
+    margin-left: 25%;
+}
+#hero_line-three{
+    
+    margin-left: 55%;
+
+}
+#hero_line-four{
+    
+    margin-left: 70%;
+    text-align: left;
+}
+
+.hero{
+    
+
+}
+.brand-box{
+    max-width: 35vw;
+    background-color: #F7EFED;
+    height: 150px;
+    box-shadow: 15px 14px 9px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+
+    position: absolute;
+    bottom: 2vh;
+
+    margin-left: 5vw;
+}
+.brand-name{
+    font-family: inter;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+    color: rgba(255, 244, 241, 1);
+    text-align: left;
+    font-size: 1rem;
+    margin: 0 1em;
+}
+
+
+/* navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+
+}
+.nav-title{
+    font-family: inter;
+    font-weight:500;
+}
+
+.email-list-container{
+    
+    margin: 0 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-list-text{
+    font-family: inter;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+.email-list-container input{
+    width: 80%;
+    border: solid 1px black;
+    border-radius: 20px;
+    background-color:rgba(255, 244, 241, 1);
+    padding: 1em
+}
+
+
+/* Section Theme */
+
+.section-theme{
+    border:solid 5px royalblue;
+    color:white;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.who-is-container{
+    border: solid 1px red;
 }

@@ -7,14 +7,15 @@ import Directions from './components/Directions'
 import MobileMenu from './components/MobileMenu'
 import FAQS from './components/FAQS'
 import HeaderTitle from "./components/HeaderTitle"
-
+import Footer from './components/Footer'
 
 function App(){
     const [ menuOn , setMenuOn] = React.useState(false)
     function handleClick(e){
-        setMenuOn((prevState) => !prevState)
+        setMenuOn(!menuOn)
         console.log("clicked")
     }
+
     return(
         <div className="page-container">
             <div className="header-menu-row">
@@ -26,7 +27,7 @@ function App(){
             <WhyUs />
             <Directions />
             <FAQS />
-        
+            <Footer />
             
 
         </div>

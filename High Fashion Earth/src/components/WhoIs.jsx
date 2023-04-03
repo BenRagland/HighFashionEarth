@@ -5,7 +5,7 @@ import SectionTheme from './SectionTheme'
 function WhoIs (){
     return(
         <SectionTheme color="#F7EFED">
-            <div className="who-is-component-container">
+            <div className="who-is-component-container" id="whoSection">
                 <div className='who-is-heading'>
                     <h2>HIGH FASHION EARTH</h2>
                     <h1> WHO IS HIGH FASHION EARTH?</h1>

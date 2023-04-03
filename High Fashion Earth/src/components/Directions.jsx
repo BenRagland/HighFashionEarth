@@ -12,7 +12,7 @@ import $$ from '../assets/$$.png'
 function Directions (){
     return(
         <SectionTheme color="#F7EFED">
-            <div className="directions-component-container">
+            <div className="directions-component-container" id="directions">
                 <Instruction 
                     image={GatherIcon} 
                     number="1" 

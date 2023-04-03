@@ -472,3 +472,12 @@ Header Title Component */
     font-weight:400;
     margin:.5em 0 0 0;
 }
+
+/* Footer Section */
+.footer-container{
+    padding: .25em;
+    width: 100%;
+    height: 15vh;
+    border:solid 1px red;
+    margin: 2em 0 0 0;
+}

@@ -6,7 +6,7 @@ import $$ from '../assets/$$.png'
 function WhyUs (){
     return(
         <SectionTheme color="#FFF4F1">
-            <div className="Whyus-component-container">
+            <div className="Whyus-component-container" id="whyUs">
                 <h1>WHY CHOOSE US?</h1>
                 {/* Higher Payouts section */}
                 <div className="higher-payouts">

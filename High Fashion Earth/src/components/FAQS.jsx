@@ -10,7 +10,7 @@ function FAQS(){
     return(
         <SectionTheme color="rgba(255, 244, 241, 1)">
             
-            <div className="all-faqs-container">
+            <div className="all-faqs-container" id="faq">
                 <h1>FAQ'S</h1>
                 <FaqBlock 
                 faqTitle="ABOUT THE APPAREL"

@@ -3,11 +3,37 @@
     /* border:solid 4px red; */
     min-height: 100vh;  
     width:100%;
-
-    
 }
 .header-container{
     min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+.hero{
+    /* border:solid 2px yellow; */
+    margin: 10vh 0 0 0;
+}
+/* container for Heder Title Component */
+.header-menu-row{
+    background-color: rgba(255, 244, 241, 1);
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+
+/* Header Title Component*/
+.header-title_container{
+    border: solid 2px yellow;
+    margin:0 .5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+.header-title_title{
+    font-family: inter;
+    font-weight:500;
 }
 /* -------Hero Text------- */
 .hero-text{
@@ -16,16 +42,14 @@
     /* border:solid 2px yellow; */
     font-family: 'Gowun Batang';
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 68px;
-    
-}
 
+    border:solid 2px red;
+}
 #hero_line-one,
 #hero_line-four{
     margin:0;
-    
-
 }
 
 #hero_line-one{
@@ -42,51 +66,31 @@
     text-align: left;
 }
 
-.hero{
-    
-
-}
 .brand-box{
     max-width: 35vw;
     background-color: #F7EFED;
     height: 150px;
     box-shadow: 15px 14px 9px rgba(0, 0, 0, 0.25);
-
-    display: flex;
-
+    
+    display:flex;
+    justify-content: center;
+    
     position: absolute;
-    bottom: 2vh;
-
-    margin-left: 10%;
+    bottom: 0;
 }
 .brand-name{
     font-family: inter;
     filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
     color: rgba(255, 244, 241, 1);
     text-align: left;
-    font-size: 1rem;
-    margin: 0 1em;
+    font-size: 1.5rem;
+    margin: auto ;
+    line-height: 40px;
+    padding:.75em;
 }
-
-
-/* Heder Title */
-.header-title_container{
-    /* border: solid 2px yellow; */
-    margin:0 .5em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1em;
-
-}
-.header-title_title{
-    font-family: inter;
-    font-weight:500;
-}
-
 .email-list-container{
     
-    margin: 0 1em;
+    margin: 5em 0 0 1em;
 
     display: flex;
     flex-direction: column;
@@ -95,43 +99,68 @@
 
 .email-list-text{
     font-family: inter;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-align: center;
     font-weight: 500;
+    margin: 1.25em 0;
 }
 .email-list-container input{
     width: 80%;
     border: solid 1px black;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color:rgba(255, 244, 241, 1);
-    padding: 1em
+    padding: 1.5em;
+}
+.paper-plane{
+    position: absolute;
+    top:15vh;
+    left: 17vw;
+    width:80%;
+    height: 40vh;
+
+    /* border:solid 2px red; */
+}
+/* Mobile Menu Bar */
+.mobile-menu_container{
+    list-style-type: none;
+    background-color: black;
+    color: white;
+
+    width: 50vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+
+    padding: 4em 0 0 0em;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+
+    text-align: left;
+    font-family: inter;
+    font-size: 1.25rem;
+}
+.mobile-menu_container li{
+    margin: 1em
 }
 
-
-/* Section Theme */
-
-.section-theme{
-    border:solid 5px royalblue;
-    
-    width: 100%;
-    min-height: 100vh;
-}
 
 
 /* Hero text & boxresizing */
 @media screen and (min-width:330px){
     .hero-text{
-        font-size:1.25rem;
+        font-size:1.5rem;
     }
 }
 @media screen and (min-width:430px){
     .hero-text{
-        font-size:1.4rem;
+        font-size:1.75rem;
     }
 }
 @media screen and (min-width:530px){
     .hero-text{
-        font-size:1.75rem;
+        font-size:2rem;
     }
 }
 @media screen and (min-width:730px){
@@ -139,22 +168,35 @@
         
     }
     .hero-text{
-        font-size:2rem;
+        font-size:2.25rem;
     }
 }
 @media screen and (min-width:900px){
     .hero-text{
         font-size:2.5rem;
     }
+    
 }
 /* Full Screen size */
 @media screen and (min-width:1100px){
+    .hero{
+        /* border:solid 2px yellow; */
+        margin:.5em 0;
+        z-index: 300;
+    }
+    .header-menu-row{
+        background-color: rgba(255, 244, 241, 1);
+        position: static;
+        z-index: 100;
+        
+    
+    }
     .header-title_container{
         margin:0 11em;
         display: flex;
         justify-content: flex-end;
         padding: 0 5em 0 0;
-    
+        
     }
     .header-title_title{
         font-family: inter;
@@ -192,7 +234,7 @@
         width:27vw;
         position: relative;
         left: 58vw;
-
+        
         
         display: flex;
         flex-direction: column;
@@ -239,13 +281,94 @@
 
     .paper-plane{
         position: absolute;
-        top:0;
-        left: 26vw;
+        top: 10vh;
+        left: 18vw;
+
+        width: 75%;
+        height: 75%;
     }
 }
 
 
+
+/* Section Theme */
+.section-theme{
+    width: 100%;
+    min-height: 100vh;
+}
 /* Who Is Section  */
 .who-is-container{
-    border: solid 1px red;
+    min-height: 100vh;
+    font-family: inter;
+    color:#604D4D;
+    padding: 1em;
+    
+}
+.who-is-heading{
+
+    width:50%;
+}
+.who-is-container h2{
+    font-weight: 400;
+    font-size: .9rem;
+    margin: 0 0 1em;
+}
+.who-is-container h1{
+    font-size: 2.5rem;
+    line-height: 45px;
+    font-weight: 500;
+    margin: 0 0 1em ;
+    
+}
+.who-is-p,
+.who-is-bold{
+    margin:0 0 1em auto;
+    font-size: 1.5rem;
+    width: 65%;
+    font-weight: 300;
+}
+.who-is-bold{
+    font-weight: 700;
+}
+
+
+/* Instruction Component*/
+
+.instruction-header-container{
+    width:60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.instruction-header-container h1{
+    font-size: 5rem;
+    color: rgb(138, 133, 133);
+    margin: 0;
+}
+
+.instruction-comp-container{
+    font-family: inter;
+    text-align: left;
+    font-size: 1.1rem;
+}
+.instruction-comp-container h4{
+    padding: 0 1em;
+    font-weight: 600;
+}
+.instruction-comp-container p{
+    padding: 0 1em;
+    font-weight: 300;
+}
+
+/* ------FAQ Section */
+.all-faqs-container{
+    display: flex;
+    justify-content: center;
+}
+.faqblock-continer{
+    width:80%;
+    height: 5vh;
+    border:solid 2px red;
+    background-color: purple;
 }

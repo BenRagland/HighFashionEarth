@@ -5,7 +5,7 @@ import SectionTheme from './SectionTheme'
 function WhoIs (){
     return(
         <SectionTheme color="#F7EFED">
-            <div className="who-is-container">
+            <div className="who-is-component-container">
                 <div className='who-is-heading'>
                     <h2>HIGH FASHION EARTH</h2>
                     <h1> WHO IS HIGH FASHION EARTH?</h1>
@@ -16,7 +16,7 @@ function WhoIs (){
                     in resale and authentication of a number of 
                     High Quality brands. To keep it short and sweet..
                 </p>
-                <p className="who-is-bold">WE BUY vintage/ luxury/ and street wear brands.</p> 
+                <p className="who-is-bold">We BUY vintage/ luxury/ and street wear brands. </p> 
             </div>   
         </SectionTheme >
     )

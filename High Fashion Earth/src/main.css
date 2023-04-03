@@ -14,18 +14,17 @@
     /* border:solid 2px yellow; */
     margin: 10vh 0 0 0;
 }
-/* container for Heder Title Component */
+/* Header Component Container for 
+Header Title Component */
 .header-menu-row{
     background-color: rgba(255, 244, 241, 1);
     position: sticky;
     top:0;
     z-index: 100;
 }
-
 /* Header Title Component*/
 .header-title_container{
-    border: solid 2px yellow;
-    margin:0 .5em;
+    margin:0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,6 +34,7 @@
     font-family: inter;
     font-weight:500;
 }
+
 /* -------Hero Text------- */
 .hero-text{
     position: relative;
@@ -142,9 +142,15 @@
     font-size: 1.25rem;
 }
 .mobile-menu_container li{
-    margin: 1em
+    margin: 1em;
 }
-
+.mobile-menu_container h4{
+    color:rgb(239, 236, 188);
+    font-family: inter;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: .25em .5em;
+}
 
 
 /* Hero text & boxresizing */
@@ -297,41 +303,104 @@
     min-height: 100vh;
 }
 /* Who Is Section  */
-.who-is-container{
+
+
+.who-is-component-container{
     min-height: 100vh;
     font-family: inter;
     color:#604D4D;
-    padding: 1em;
+    padding: 1.5em;
+
     
 }
 .who-is-heading{
-
-    width:50%;
+    width:60%;
 }
-.who-is-container h2{
+.who-is-component-container h2{
     font-weight: 400;
     font-size: .9rem;
     margin: 0 0 1em;
 }
-.who-is-container h1{
+.who-is-component-container h1{
     font-size: 2.5rem;
     line-height: 45px;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0 0 1em ;
-    
 }
-.who-is-p,
-.who-is-bold{
+.who-is-p{
     margin:0 0 1em auto;
     font-size: 1.5rem;
-    width: 65%;
-    font-weight: 300;
+    width: 70%;
+    font-weight: 400;
+    line-height: 35px;
+
 }
 .who-is-bold{
     font-weight: 700;
+    width: 100%;
+    font-size: 1.45rem;
+    margin:0 auto;
+    line-height: 30px;
+}
+/* Why Choose US Paige */
+.Whyus-component-container{
+    padding:2em;
+    min-height: 100vh;
+    font-family: inter;
+    color:#604D4D;
+    padding: 1.5em;
+    margin: 3em 0 0 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Whyus-component-container h1{
+    width: 80%;
+    text-align: right;
+
+    font-size: 2.5rem;
+    line-height: 45px;
+    font-weight: 600;
+    margin:0 .25em 0 15vw;
+}
+.Whyus-component-container h2{
+    font-weight: 500;
+}
+.higher-payouts span{
+    color:orange
+}
+.initial-offer{
+    text-align: left;
+    width: 100%;
+}
+.initial-offer h2{
+    width:90%;
+    margin: 0 0 0 9vw;
+}
+.initial-offer span{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: 1em;
+    color: green;
+}
+.drop-offs span{
+    color:orange;
 }
 
 
+
+
+
+
+/* Seller Directions Page */
+.directions-component-container{
+    padding: 2em 1.5em;
+}
+
+.instruction-header-container img{
+    max-width: 60%;
+}
 /* Instruction Component*/
 
 .instruction-header-container{
@@ -364,11 +433,42 @@
 /* ------FAQ Section */
 .all-faqs-container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* border:solid 2px red; */
 }
-.faqblock-continer{
-    width:80%;
-    height: 5vh;
-    border:solid 2px red;
-    background-color: purple;
+
+
+.faq-block-component-container{
+    width: 90%;
+    margin-top: 1em;
+    
+}
+.faq-block-section-title{
+    font-family: inter;
+    font-weight: 500;
+    margin: 0 0 1em .1em;
+    font-size: 1.2rem;
+}
+.faq-block-continer{
+    font-family: inter;
+    font-size: 1rem;
+    padding: .25em;
+    border-left:solid 1.5px  black;
+    border-bottom:solid 1.5px  black;
+    border-right:solid 1.5px  black;
+
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between; 
+}
+.faq-block-continer h1{
+    text-transform: uppercase;
+    font-size: 1.22rem;
+    font-weight:400;
+    margin: 0 0 .25em 0 ;
+}
+.faq-block-continer p{
+    font-weight:400;
+    margin:.5em 0 0 0;
 }

@@ -8,14 +8,14 @@ import PaperPlane from "../assets/PaperPlane.png"
 
 function Header() {
 
-    
+    function handleCLick(e){
+        console.log("Should change the state")
+    }
     
   return (
     <div className="header-container">
         
-        <div className="header-menu-row">
-            <HeaderTitle />
-        </div>
+        
 
         <div className="hero">
 

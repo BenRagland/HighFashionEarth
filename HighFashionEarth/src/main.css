@@ -197,6 +197,45 @@ Header Title Component */
     }
     
 }
+/* Who Is Section  */
+.who-is-component-container{
+    min-height: 100vh;
+    font-family: inter;
+    color:#604D4D;
+    padding: 1.5em;
+
+    
+}
+.who-is-heading{
+    width:60%;
+}
+.who-is-component-container h2{
+    font-weight: 400;
+    font-size: .9rem;
+    margin: 0 0 1em;
+}
+.who-is-component-container h1{
+    font-size: 2.5rem;
+    line-height: 45px;
+    font-weight: 600;
+    margin: 0 0 1em ;
+}
+.who-is-p{
+    margin:0 0 1em auto;
+    font-size: 1.5rem;
+    width: 70%;
+    font-weight: 400;
+    line-height: 35px;
+
+}
+.who-is-bold{
+    font-weight: 700;
+    width: 100%;
+    font-size: 1.45rem;
+    margin:0 auto;
+    line-height: 30px;
+}
+
 /* Full Screen size */
 @media screen and (min-width:1100px){
     
@@ -314,6 +353,55 @@ Header Title Component */
         width: 75%;
         height: 75%;
     }
+
+    /* Full Size Screen
+    Who-is Section  */
+
+    .who-is-component-container{
+        min-height: 100vh;
+        font-family: inter;
+        color:#604D4D;
+        padding: 7em 7em 3em;
+        display: flex;
+        align-items: start baseline;
+    }
+    .who-is-heading{
+        width:60%;
+    }
+    .who-is-component-container h1{
+        font-size: 7.5rem;
+        line-height: 163px;
+        font-weight: 400;
+        margin: 0 0 1em ;
+        border:solid 2px red;
+        width: 30vw;
+        
+        
+    }
+    .who-is-p{
+        border:solid 2px red;
+        margin:0 0 1em ;
+        font-size: 2.5rem;
+        width: 80vw;
+        font-weight: 400;
+        line-height: 65px;
+    
+    }
+    .who-is-bold{
+        font-weight: 700;
+        width: 100%;
+        font-size: 3rem;
+        margin:1em auto;
+        line-height: 60px;
+        text-transform: capitalize;
+    }
+    .fashion-models{
+        width:20%;
+        height:20%;
+
+        position: absolute;
+        bottom:0;
+    }
 }
 
 
@@ -323,46 +411,10 @@ Header Title Component */
     width: 100%;
     min-height: 100vh;
 }
-/* Who Is Section  */
 
 
-.who-is-component-container{
-    min-height: 100vh;
-    font-family: inter;
-    color:#604D4D;
-    padding: 1.5em;
 
-    
-}
-.who-is-heading{
-    width:60%;
-}
-.who-is-component-container h2{
-    font-weight: 400;
-    font-size: .9rem;
-    margin: 0 0 1em;
-}
-.who-is-component-container h1{
-    font-size: 2.5rem;
-    line-height: 45px;
-    font-weight: 600;
-    margin: 0 0 1em ;
-}
-.who-is-p{
-    margin:0 0 1em auto;
-    font-size: 1.5rem;
-    width: 70%;
-    font-weight: 400;
-    line-height: 35px;
 
-}
-.who-is-bold{
-    font-weight: 700;
-    width: 100%;
-    font-size: 1.45rem;
-    margin:0 auto;
-    line-height: 30px;
-}
 /* Why Choose US Paige */
 .Whyus-component-container{
     padding:2em;

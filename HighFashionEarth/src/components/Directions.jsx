@@ -7,7 +7,7 @@ import GatherIcon from '../assets/GatherIcon.png'
 import TakePicIcon from '../assets/TakePicIcon.png'
 import RecieveOffer from '../assets/RecieveOfferIcon.png'
 import ShippingIcon from '../assets/ShippingIcon.png'
-import $$ from '../assets/$$.png'
+import $$$ from '../assets/$$$.png'
 
 function Directions (){
     return(
@@ -51,7 +51,7 @@ function Directions (){
                 />
 
                 <Instruction 
-                    image={$$} 
+                    image={$$$} 
                     number="5" 
                     instructions="get paid + 50% cost of shipping. At the moment we offer digital 
                     payments via venmo or zelle."

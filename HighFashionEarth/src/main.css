@@ -17,9 +17,20 @@ body {
 .section-theme {
   width: 100vw;
   min-height: 100vh;
-  
 }
+.section-name-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4em;
 
+    font-family: inter;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color:white;
+}
+.section-name-label-two{
+    color:#CBC8C8 ;
+}
 /* ----- */
 
 .content-container {

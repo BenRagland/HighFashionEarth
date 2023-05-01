@@ -4,7 +4,7 @@ import SectionTheme from './SectionTheme'
 import FashionModels from '../assets/FashionModels.png'
 function WhoIs (){
     return(
-        <SectionTheme color="#F7EFED">
+        <SectionTheme color="#F7EFED" sectionName="WHO IS HIGH FASHION EARTH">
             <div className="who-is-component-container" id="whoSection">
                 <div className='who-is-heading'>
                 

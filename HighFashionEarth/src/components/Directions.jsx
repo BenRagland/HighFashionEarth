@@ -11,7 +11,7 @@ import $$$$$ from '../assets/$$$$$.png'
 
 function Directions (){
     return(
-        <SectionTheme color="#F7EFED">
+        <SectionTheme color="#F7EFED" sectionName="Seller Directions">
             <div className="directions-component-container" id="directions">
                 <h1> Directions</h1>
                 <Instruction 

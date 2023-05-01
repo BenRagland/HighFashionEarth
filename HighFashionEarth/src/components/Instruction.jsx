@@ -8,8 +8,10 @@ function Instruction(props) {
         <img src={props.image} />
         <h1>{props.number}</h1>
       </div>
-      <h4>{props.instructions}</h4>
-      <p>{props.details}</p>
+      <div className="instructions-text-group">
+        <h4>{props.instructions}</h4>
+        <p>{props.details}</p>
+      </div>
     </div>
   );
 }

@@ -1,16 +1,31 @@
 body {
-  background-color: rgba(255, 244, 241, 1);
-  display: flex;
-  justify-content: center;
+    width:100vw;
+    background-color: rgba(255, 244, 241, 1);
+    margin:0;
+    display: flex;
+    justify-content: center;
 }
 .background-container {
   background-color: rgba(255, 244, 241, 1);
-  /* border:solid 4px red; */
-  min-height: 100%;
-  max-width: 1920px;
+  border:solid 4px red;
+  min-height: 100vh;
+  width:100vw;
+  
 }
+
+/* Themes  */
+
+.section-theme {
+  width: 100vw;
+  min-height: 100vh;
+  
+}
+
+/* ----- */
+
 .content-container {
-  border: solid 2px black;
+    
+    max-width: 1900px
 }
 .header-container {
   min-height: 100vh;
@@ -165,34 +180,6 @@ Header Title Component */
   margin: 0.25em 0.5em;
 }
 
-/* Hero text & boxresizing */
-@media screen and (min-width: 330px) {
-  .hero-text {
-    font-size: 1.75rem;
-  }
-}
-@media screen and (min-width: 430px) {
-  .hero-text {
-    font-size: 1.75rem;
-  }
-}
-@media screen and (min-width: 530px) {
-  .hero-text {
-    font-size: 2rem;
-  }
-}
-@media screen and (min-width: 730px) {
-  #hero_line-one {
-  }
-  .hero-text {
-    font-size: 2.25rem;
-  }
-}
-@media screen and (min-width: 900px) {
-  .hero-text {
-    font-size: 2.5rem;
-  }
-}
 /* Who Is Section  */
 .fashion-models {
   width: 40vw;
@@ -218,23 +205,109 @@ Header Title Component */
   margin: 0 0 1em;
 }
 .who-is-p {
-  margin: 0 0 1em auto;
-  font-size: 1.5rem;
+  margin: 1em 0 1em auto;
+  font-size: 1.25rem;
   width: 70%;
   font-weight: 400;
   line-height: 35px;
 }
 .who-is-bold {
-  font-weight: 700;
+    font-weight: 700;
   width: 100%;
   font-size: 1.45rem;
-  margin: 0 auto;
+  margin: 1em auto;
   line-height: 30px;
 }
 
 /* why us  */
 
+/* Seller Directions Page */
+.directions-component-container {
+  padding: 2em 1.5em;
+}
 
+/* Instruction Component*/
+.instruction-comp-container {
+}
+
+.instruction-header-container {
+  width: 100%;
+  padding: 2em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  display: flex;
+  justify-content: space-evenly;
+}
+.instruction-header-container img {
+  max-width: 60%;
+  height: 50%;
+}
+.instruction-header-container h1 {
+    font-size: 6.5rem;
+  font-weight: 300;
+  color: rgb(138, 133, 133);
+  margin: 0;
+}
+
+.instruction-comp-container {
+  font-family: inter;
+  text-align: left;
+  font-size: 1.1rem;
+}
+.instruction-comp-container h4 {
+  padding: 0 1em;
+  font-weight: 600;
+}
+.instruction-comp-container p {
+    padding: 0 1em;
+    font-weight: 300;
+}
+/* Hero text & boxresizing */
+@media screen and (min-width: 330px) {
+  .hero-text {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 430px) {
+  .hero-text {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 530px) {
+  .hero-text {
+    font-size: 2rem;
+  }
+  .directions-component-container{
+    padding: 0 5em;
+  }
+}
+@media screen and (min-width: 730px) {
+  #hero_line-one {
+  }
+  .hero-text {
+    font-size: 2.25rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .instruction-comp-container h4 {
+    padding: 0 1em;
+    font-weight: 500;
+    font-size: 1.25rem;
+
+  }
+  .instruction-comp-container p {
+    padding: 0 1em;
+    font-weight: 275;
+    font-size: 1.25rem;
+
+  }
+}
 
 /* Full Screen size */
 @media screen and (min-width: 1100px) {
@@ -275,13 +348,13 @@ Header Title Component */
     margin-top: 3vh;
   }
   #hero_line-two {
-    margin-left: 30%;
+      margin-left: 30%;
     margin-top: 9vh;
   }
   #hero_line-three {
     margin-left: 57%;
     margin-top: 10vh;
-  }
+}
   #hero_line-four {
     margin-left: 75%;
     margin-top: 9vh;
@@ -333,6 +406,7 @@ Header Title Component */
     filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
     color: rgba(255, 244, 241, 1);
     font-size: 3.25rem;
+    line-height: 70px;
     margin: 0 auto;
   }
 
@@ -359,7 +433,6 @@ Header Title Component */
     align-items: start baseline;
   }
   .who-is-heading {
-    width: 60%;
   }
   .who-is-component-container h1 {
     font-size: 7.5rem;
@@ -367,7 +440,7 @@ Header Title Component */
     font-weight: 400;
     margin: 0 0 1em;
     border: solid 2px red;
-    width: 30vw;
+    width: 70%;
   }
   .who-is-p {
     border: solid 2px red;
@@ -472,54 +545,100 @@ Header Title Component */
   .girl-shopping {
     width: 20%;
   }
-}
 
-/* Section Theme */
-.section-theme {
-  width: 100%;
-  min-height: 100vh;
-}
+  /* Full-Screen Directions page */
 
-/* Seller Directions Page */
-.directions-component-container {
-  padding: 2em 1.5em;
-}
-/* Instruction Component*/
-.instruction-comp-container {
-  border: solid 2px red;
-}
+  .directions-component-container {
+    padding: 7em;
+  }
 
-.instruction-header-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border: solid 2px red;
-  display: flex;
-  justify-content: space-evenly;
-}
-.instruction-header-container img {
-  max-width: 60%;
-}
-.instruction-header-container h1 {
-  font-size: 5rem;
-  color: rgb(138, 133, 133);
-  margin: 0;
-}
+  /* Full Screen Instruction Component*/
+  .instruction-comp-container {
+  }
+  .directions-component-container h1 {
+    font-family: inter;
+    font-size: 7.5rem;
+    color: rgba(13, 207, 13, 0.805);
+    font-weight: 300;
+    margin: 0;
+    border: solid 2px red;
+  }
+  .instruction-comp-container {
+    font-family: inter;
+    text-align: left;
+    font-size: 1.1rem;
 
-.instruction-comp-container {
-  font-family: inter;
-  text-align: left;
-  font-size: 1.1rem;
+    position: relative;
+  }
+  .instruction-header-container {
+    width: 100%;
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .instruction-header-container img {
+    width: 20vw;
+    max-width: 400px;
+  }
+  .instruction-header-container h1 {
+    font-size: 12rem;
+    font-weight: 400;
+    color: rgb(138, 133, 133);
+    margin: 0;
+  }
+
+  .instructions-text-group {
+    width: 48%;
+    position: absolute;
+    bottom: 20%;
+    left: 27%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:solid 2px green;
+    font-size: 2rem;
+  }
+  .instruction-comp-container h4 {
+    padding: 0 1em;
+    font-weight: 500;
+  }
+  .instruction-comp-container p {
+    padding: 0 1em;
+    font-weight: 275;
+  }
+  /* End of Full Screen */
 }
-.instruction-comp-container h4 {
-  padding: 0 1em;
-  font-weight: 600;
-}
-.instruction-comp-container p {
-  padding: 0 1em;
-  font-weight: 300;
-}
+@media screen and (min-width: 1450px) {
+    .hero-text {
+      font-size: 2.5rem;
+    }
+  
+    .instruction-comp-container h4 {
+      padding: 0 1em;
+      font-weight: 500;
+      font-size: 1.75rem;
+  
+    }
+    .instruction-comp-container p {
+      padding: 0 1em;
+      font-weight: 275;
+      font-size: 1.75rem;
+  
+    }
+    .instructions-text-group {
+        width: 55%;
+        position: absolute;
+        bottom: 20%;
+        left: 27%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border:solid 2px green;
+        font-size: 2rem;
+      }
+  }
 
 /* ------FAQ Section */
 .all-faqs-container {
@@ -565,7 +684,7 @@ Header Title Component */
 /* Footer Section */
 .footer-container {
   padding: 0.25em;
-  width: 100%;
+  width: 100vw;
   height: 15vh;
   border: solid 1px red;
   margin: 2em 0 0 0;

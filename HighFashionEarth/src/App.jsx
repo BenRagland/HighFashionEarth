@@ -17,8 +17,8 @@ function App() {
   }
 
   function handleMenuOff(e) {
-    menuOn && handleClick();
-    console.log("menu off clicked");
+    menuOn && handleClick()
+    // console.log("menu off clicked")
   }
 
   return (

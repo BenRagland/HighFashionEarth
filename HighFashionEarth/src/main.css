@@ -7,7 +7,6 @@ body {
 }
 .background-container {
   background-color: rgba(255, 244, 241, 1);
-  border:solid 4px red;
   min-height: 100vh;
   width:100vw;
   
@@ -219,14 +218,21 @@ Header Title Component */
   line-height: 30px;
 }
 
-/* why us  */
 
-/* Seller Directions Page */
+/* --------------Seller Directions Page------------ */
 .directions-component-container {
   padding: 2em 1.5em;
 }
 
 /* Instruction Component*/
+.directions-component-container h1 {
+    font-family: inter;
+    font-size: 2rem;
+    color: rgba(7, 97, 7, 0.805);
+    font-weight: 400;
+    margin: 0;
+    
+  }
 .instruction-comp-container {
 }
 
@@ -264,6 +270,45 @@ Header Title Component */
     padding: 0 1em;
     font-weight: 300;
 }
+
+/*--------------------- Why Us Page--------------------- */
+
+.Whyus-component-container {
+    min-height: 100vh;
+    font-family: inter;
+    color: #604d4d;
+    padding: 0em 2em;
+}
+.higher-payout-icon{
+    width: 70px;
+}
+.Whyus-component-container h1 {
+    position: relative;
+    right: -27vw;
+    text-align: right;
+    font-size: 2rem;
+    line-height: 40px;
+    font-weight: 400;
+    margin: 0;
+    width: 55vw;
+    
+}
+.Whyus-component-container h2{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.Whyus-component-container p{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 25px;
+}
+.money-icon{
+    display: none;
+}
+.girl-shopping{
+    width: 150px;
+}
+
 /* Hero text & boxresizing */
 @media screen and (min-width: 330px) {
   .hero-text {
@@ -271,17 +316,30 @@ Header Title Component */
   }
 }
 @media screen and (min-width: 430px) {
-  .hero-text {
+    .hero-text {
     font-size: 1.75rem;
-  }
+    }
+    .Whyus-component-container {
+        min-height: 100vh;
+        font-family: inter;
+        color: #604d4d;
+        padding: 0em 3.5em;
+    }
 }
 @media screen and (min-width: 530px) {
-  .hero-text {
+    .Whyus-component-container h1 {
+      font-size: 2.75rem;
+      line-height: 50px;
+      font-weight: 400;
+      width: 60vw;
+    }
+    .hero-text {
     font-size: 2rem;
   }
   .directions-component-container{
     padding: 0 5em;
   }
+  
 }
 @media screen and (min-width: 730px) {
   #hero_line-one {
@@ -289,6 +347,12 @@ Header Title Component */
   .hero-text {
     font-size: 2.25rem;
   }
+  .Whyus-component-container {
+    min-height: 100vh;
+    font-family: inter;
+    color: #604d4d;
+    padding: 0em 5em;
+}
 }
 @media screen and (min-width: 900px) {
   .hero-text {
@@ -419,7 +483,7 @@ Header Title Component */
     height: 90%;
     height: 85vh;
   }
-
+  
   /* Full Size Screen
     Who-is Section  */
 
@@ -439,14 +503,14 @@ Header Title Component */
     line-height: 163px;
     font-weight: 400;
     margin: 0 0 1em;
-    border: solid 2px red;
+    
     width: 70%;
   }
   .who-is-p {
-    border: solid 2px red;
+   
     margin: 0 0 1em;
     font-size: 2.5rem;
-    width: 80vw;
+    width: 60vw;
     font-weight: 400;
     line-height: 65px;
   }
@@ -468,31 +532,35 @@ Header Title Component */
 
   /* Full Screen - Why Choos Us Section */
   .Whyus-component-container {
-    border: solid 2px red;
+    
     min-height: 100vh;
     font-family: inter;
     color: #604d4d;
     padding: 2em 7em 0;
   }
+  .whyus-row-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    
+  }
   .Whyus-component-container h1 {
+    position:static;
     font-size: 7.5rem;
     line-height: 123px;
     font-weight: 400;
     margin: 0;
     width: 40%;
+   
+  }
+  .higher-payout-icon{
+    display: none;
   }
   .higher-payouts {
-    border: solid 2px yellow;
     width: 45%;
   }
   .higher-payouts span {
     color: orange;
-  }
-  .whyus-row-one {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    border: solid 2px green;
   }
   .Whyus-component-container h2 {
     font-weight: 500;
@@ -504,13 +572,11 @@ Header Title Component */
     left: 20%;
     display: flex;
     align-items: center;
-    border: solid 2px red;
+    
     width: 80%;
   }
   .initial-offer {
     text-align: left;
-
-    border: solid 2px green;
     width: 50vw;
   }
   .Whyus-component-container h2 {
@@ -536,7 +602,6 @@ Header Title Component */
   }
   .whyus-row-three {
     display: flex;
-
     justify-content: space-between;
   }
   .drop-offs span {
@@ -544,6 +609,8 @@ Header Title Component */
   }
   .girl-shopping {
     width: 20%;
+    position: relative;
+    left: 15vw;
   }
 
   /* Full-Screen Directions page */
@@ -558,10 +625,10 @@ Header Title Component */
   .directions-component-container h1 {
     font-family: inter;
     font-size: 7.5rem;
-    color: rgba(13, 207, 13, 0.805);
+    color: rgba(7, 120, 7, 0.805);
     font-weight: 300;
     margin: 0;
-    border: solid 2px red;
+    
   }
   .instruction-comp-container {
     font-family: inter;
@@ -596,7 +663,6 @@ Header Title Component */
     display: flex;
     flex-direction: column;
     align-items: center;
-    border:solid 2px green;
     font-size: 2rem;
   }
   .instruction-comp-container h4 {
@@ -635,7 +701,6 @@ Header Title Component */
         display: flex;
         flex-direction: column;
         align-items: center;
-        border:solid 2px green;
         font-size: 2rem;
       }
   }

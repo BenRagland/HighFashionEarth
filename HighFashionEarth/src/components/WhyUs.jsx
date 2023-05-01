@@ -9,6 +9,9 @@ function WhyUs (){
             <div className="Whyus-component-container" id="whyUs">
                 <div className="whyus-row-one">
                     <h1>WHY CHOOSE US?</h1>
+                    {/* img for mobile display only */}
+                    <img className="higher-payout-icon" src={$$$}/>  
+                    
                     {/* Higher Payouts section */}
                     <div className="higher-payouts">
                         <div className="higher-payouts-header">

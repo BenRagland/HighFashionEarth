@@ -17,7 +17,7 @@ function App() {
   }
 
   function handleMenuOff(e) {
-    menuOn && handleClick()
+    menuOn && handleClick();
     // console.log("menu off clicked")
   }
 
@@ -31,8 +31,8 @@ function App() {
           click={handleClick}
           style={{ display: menuOn ? "" : "none" }}
         />
-        <Header />
         <div className="content-container">
+          <Header />
           <WhoIs />
           <WhyUs />
           <Directions />

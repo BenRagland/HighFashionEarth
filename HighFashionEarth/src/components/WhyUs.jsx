@@ -32,7 +32,7 @@ function WhyUs (){
                         <h2>RECIEVE INITIAL OFFER VIA TEXT.
                             <span>(XXX)-XXX-$$$$</span>
                         </h2>
-                        <p>We will pre determine whether we are interested in your 
+                        <p className="initial-p">We will pre determine whether we are interested in your 
                             items & send an offer. so, You wont have to leave 
                             your  home unless you’re sure we’re interested in your pieces.  
                         </p>

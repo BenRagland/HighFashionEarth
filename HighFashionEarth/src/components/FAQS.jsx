@@ -55,6 +55,7 @@ function FAQS(){
                 answer="this is the answer"
                 />
             </div>
+            <div className="faq-spacer"></div>
         </SectionTheme>
     )
 }

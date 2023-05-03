@@ -7,7 +7,6 @@ import Directions from "./components/Directions";
 import MobileMenu from "./components/MobileMenu";
 import FAQS from "./components/FAQS";
 import HeaderTitle from "./components/HeaderTitle";
-import Footer from "./components/Footer";
 
 function App() {
   const [menuOn, setMenuOn] = React.useState(false);
@@ -37,7 +36,6 @@ function App() {
           <WhyUs />
           <Directions />
           <FAQS />
-          <Footer />
         </div>
       </div>
     </div>

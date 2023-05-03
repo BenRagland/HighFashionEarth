@@ -159,6 +159,23 @@ Header Title Component */
   background-color: rgba(255, 244, 241, 1);
   padding: 1.5em;
 }
+.submit-button{
+  text-decoration: none;
+  border: solid 1px rgb(149, 140, 140);
+  border-radius: 14px;
+  padding: 1em 2em;
+  margin: 1em 0 0 ;
+  background-color: #f5f3f300;
+}
+.submit-button:hover{
+  cursor:pointer;
+}
+.submit-button:target,
+.submit-button:active{
+  transform: translate(3px,2px);
+  background-color: #d8b7b7b3;
+
+}
 .paper-plane {
   position: absolute;
   top: 25vh;
@@ -388,7 +405,7 @@ Header Title Component */
 .footer-container {
   font-family: inter;
   color: #604d4d;
-  padding: 0 2.5em;
+  padding: 0 4.75vw;
   font-size: 0.75rem;
   margin: 2em 0 0;
 }
@@ -411,6 +428,7 @@ Header Title Component */
   .hero-text {
     font-size: 1.75rem;
   }
+ 
 }
 @media screen and (min-width: 430px) {
   .hero-text {
@@ -421,6 +439,7 @@ Header Title Component */
     font-family: inter;
     color: #604d4d;
     padding: 0em 3.5em;
+
   }
 }
 @media screen and (min-width: 530px) {
@@ -495,9 +514,7 @@ Header Title Component */
   .section-name-container {
     font-size: 1.25rem;
   }
-  .footer-container {
-    padding: 0 4em;
-  }
+  
 }
 @media screen and (min-width: 900px) {
   .hero-text {
@@ -874,7 +891,7 @@ Header Title Component */
   .footer-container {
     font-family: inter;
     color: #604d4d;
-    padding: 0 6em;
+    padding: 0 4.75vw;
     font-size: 0.75rem;
     margin: 2em 0;
   }
@@ -932,6 +949,6 @@ Header Title Component */
   }
 
   .footer-container {
-    padding: 0 8em;
+    padding: 0 4.75vw;
   }
 }

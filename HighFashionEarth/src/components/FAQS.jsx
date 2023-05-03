@@ -2,6 +2,7 @@ import React from 'react'
 import Styles from '../main.css'
 import SectionTheme from './SectionTheme'
 import FaqBlock from './FaqBlock'
+import Footer from "./Footer";
 
 
 function FAQS(){
@@ -24,7 +25,7 @@ function FAQS(){
                 {/* Pictures FAQ Section */}
                 <FaqBlock 
                 faqTitle="Pictures"
-                question="What Do 'good' picture ook like?"
+                question="What Do 'good' pictures look like?"
                 answer="this is the answer"
                 />
                 <FaqBlock 
@@ -56,6 +57,8 @@ function FAQS(){
                 />
             </div>
             <div className="faq-spacer"></div>
+            <Footer />
+
         </SectionTheme>
     )
 }
